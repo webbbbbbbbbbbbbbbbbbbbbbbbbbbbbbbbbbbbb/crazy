@@ -1,0 +1,24 @@
+{
+  "name": "discord_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "prestart:cleanup": "npm prune --production",
+    "start": "npm run prestart:cleanup && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8",
+    "discord.js": "^13.17.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "node-fetch": "^2.7.0",
+    "request-ip": "^3.3.0",
+    "tinyurl": "^1.1.7"
+  }
+}
